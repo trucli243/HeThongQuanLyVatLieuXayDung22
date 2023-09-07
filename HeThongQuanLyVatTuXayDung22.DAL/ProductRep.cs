@@ -56,6 +56,52 @@ namespace HeThongQuanLyVatTuXayDung22.DAL
            
             return All.Where(a => a.ProductName.Contains(keyWord)).ToList();
         }
+        public SingleRsp EditProduct(Product product)
+        {
+            var res = new SingleRsp();
+            //res.Data = All.FirstOrDefault(s => s.CategoryId == category.CategoryId);
+            using (var context = new QLVLXDContext())
+            {
+                using (var tran = context.Database.BeginTransaction())
+                {
+                    try
+                    {
+                        var p = context.Products.Update(product);
+                        context.SaveChanges();
+                        tran.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        tran.Rollback();
+                        res.SetError(ex.StackTrace);
+                    }
+                }
+            }
+            return res;
+        }
+        public SingleRsp DeleteProduct(int id)
+        {
+            var res = new SingleRsp();
+            //res.Data = All.FirstOrDefault(s => s.CategoryId == category.CategoryId);
+            using (var context = new QLVLXDContext())
+            {
+                using (var tran = context.Database.BeginTransaction())
+                {
+                    try
+                    {
+                        var p = context.Products.Remove(All.FirstOrDefault(s => s.ProductId == id));
+                        context.SaveChanges();
+                        tran.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        tran.Rollback();
+                        res.SetError(ex.StackTrace);
+                    }
+                }
+            }
+            return res;
+        }
         #endregion
     }
 }
