@@ -11,3 +11,16 @@ C:\Users\Phuong Thao\Desktop\HeThongQuanLyVatTuXayDung22\HeThongQuanLyVatTuXayDu
 C:\Users\Phuong Thao\Desktop\HeThongQuanLyVatTuXayDung22\HeThongQuanLyVatTuXayDung22.Common\bin\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.Common.runtimeconfig.json
 C:\Users\Phuong Thao\Desktop\HeThongQuanLyVatTuXayDung22\HeThongQuanLyVatTuXayDung22.Common\bin\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.Common.runtimeconfig.dev.json
 C:\Users\Phuong Thao\Desktop\HeThongQuanLyVatTuXayDung22\HeThongQuanLyVatTuXayDung22.Common\obj\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.Common.genruntimeconfig.cache
+C:\Users\acer\Desktop\đồ án\HeThongQuanLyVatLieuXayDung22\HeThongQuanLyVatTuXayDung22.Common\bin\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.Common.deps.json
+C:\Users\acer\Desktop\đồ án\HeThongQuanLyVatLieuXayDung22\HeThongQuanLyVatTuXayDung22.Common\bin\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.Common.runtimeconfig.json
+C:\Users\acer\Desktop\đồ án\HeThongQuanLyVatLieuXayDung22\HeThongQuanLyVatTuXayDung22.Common\bin\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.Common.runtimeconfig.dev.json
+C:\Users\acer\Desktop\đồ án\HeThongQuanLyVatLieuXayDung22\HeThongQuanLyVatTuXayDung22.Common\bin\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.Common.dll
+C:\Users\acer\Desktop\đồ án\HeThongQuanLyVatLieuXayDung22\HeThongQuanLyVatTuXayDung22.Common\bin\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.Common.pdb
+C:\Users\acer\Desktop\đồ án\HeThongQuanLyVatLieuXayDung22\HeThongQuanLyVatTuXayDung22.Common\obj\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.Common.csproj.AssemblyReference.cache
+C:\Users\acer\Desktop\đồ án\HeThongQuanLyVatLieuXayDung22\HeThongQuanLyVatTuXayDung22.Common\obj\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acer\Desktop\đồ án\HeThongQuanLyVatLieuXayDung22\HeThongQuanLyVatTuXayDung22.Common\obj\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.Common.AssemblyInfoInputs.cache
+C:\Users\acer\Desktop\đồ án\HeThongQuanLyVatLieuXayDung22\HeThongQuanLyVatTuXayDung22.Common\obj\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.Common.AssemblyInfo.cs
+C:\Users\acer\Desktop\đồ án\HeThongQuanLyVatLieuXayDung22\HeThongQuanLyVatTuXayDung22.Common\obj\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.Common.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\đồ án\HeThongQuanLyVatLieuXayDung22\HeThongQuanLyVatTuXayDung22.Common\obj\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.Common.dll
+C:\Users\acer\Desktop\đồ án\HeThongQuanLyVatLieuXayDung22\HeThongQuanLyVatTuXayDung22.Common\obj\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.Common.pdb
+C:\Users\acer\Desktop\đồ án\HeThongQuanLyVatLieuXayDung22\HeThongQuanLyVatTuXayDung22.Common\obj\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.Common.genruntimeconfig.cache

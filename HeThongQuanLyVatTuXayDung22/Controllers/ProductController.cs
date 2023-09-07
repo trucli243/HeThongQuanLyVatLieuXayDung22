@@ -28,6 +28,29 @@ namespace HeThongQuanLyVatTuXayDung22.Controllers
             res = productSvc.CreateProduct(productReq);
             return Ok(res);
         }
+
+        [HttpPost("search-product")]
+        public IActionResult SearchProduct([FromBody] SearchProductReq searchProductReq)
+        {
+            var res = new SingleRsp();
+            res = productSvc.SearchProduct(searchProductReq);
+            return Ok(res);
+        }
+
+        //[HttpPost("edit-product")]
+        //public IActionResult EditProduct([FromBody] ProductReq productReq)
+        //{
+        //    var res = new SingleRsp();
+        //    res = productSvc.EditProduct(productReq);
+        //    return Ok(res);
+        //}
+        //[HttpPost("delete-product")]
+        //public IActionResult DeleteProduct([FromBody] int id)
+        //{
+        //    var res = new SingleRsp();
+        //    res = productSvc.DeleteProduct(id);
+        //    return Ok(res);
+        //}
     }
 
 

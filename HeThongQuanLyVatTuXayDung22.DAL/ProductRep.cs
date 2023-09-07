@@ -50,6 +50,12 @@ namespace HeThongQuanLyVatTuXayDung22.DAL
             }
             return res;
         }
+
+        public List<Product> SearchProduct(string keyWord)
+        {
+           
+            return All.Where(a => a.ProductName.Contains(keyWord)).ToList();
+        }
         #endregion
     }
 }
