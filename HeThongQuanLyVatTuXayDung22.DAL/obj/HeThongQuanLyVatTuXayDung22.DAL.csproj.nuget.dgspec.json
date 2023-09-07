@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\acer\\Desktop\\đồ án\\HeThongQuanLyVatLieuXayDung22\\HeThongQuanLyVatTuXayDung22.DAL\\HeThongQuanLyVatTuXayDung22.DAL.csproj": {}
+    "C:\\Users\\Phuong Thao\\Desktop\\HeThongQuanLyVatTuXayDung22\\HeThongQuanLyVatTuXayDung22.DAL\\HeThongQuanLyVatTuXayDung22.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\acer\\Desktop\\đồ án\\HeThongQuanLyVatLieuXayDung22\\HeThongQuanLyVatTuXayDung22.Common\\HeThongQuanLyVatTuXayDung22.Common.csproj": {
+    "C:\\Users\\Phuong Thao\\Desktop\\HeThongQuanLyVatTuXayDung22\\HeThongQuanLyVatTuXayDung22.Common\\HeThongQuanLyVatTuXayDung22.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\Desktop\\đồ án\\HeThongQuanLyVatLieuXayDung22\\HeThongQuanLyVatTuXayDung22.Common\\HeThongQuanLyVatTuXayDung22.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Phuong Thao\\Desktop\\HeThongQuanLyVatTuXayDung22\\HeThongQuanLyVatTuXayDung22.Common\\HeThongQuanLyVatTuXayDung22.Common.csproj",
         "projectName": "HeThongQuanLyVatTuXayDung22.Common",
-        "projectPath": "C:\\Users\\acer\\Desktop\\đồ án\\HeThongQuanLyVatLieuXayDung22\\HeThongQuanLyVatTuXayDung22.Common\\HeThongQuanLyVatTuXayDung22.Common.csproj",
-        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\Desktop\\đồ án\\HeThongQuanLyVatLieuXayDung22\\HeThongQuanLyVatTuXayDung22.Common\\obj\\",
+        "projectPath": "C:\\Users\\Phuong Thao\\Desktop\\HeThongQuanLyVatTuXayDung22\\HeThongQuanLyVatTuXayDung22.Common\\HeThongQuanLyVatTuXayDung22.Common.csproj",
+        "packagesPath": "C:\\Users\\Phuong Thao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Phuong Thao\\Desktop\\HeThongQuanLyVatTuXayDung22\\HeThongQuanLyVatTuXayDung22.Common\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Phuong Thao\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,7 +61,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -74,25 +71,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.409\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\acer\\Desktop\\đồ án\\HeThongQuanLyVatLieuXayDung22\\HeThongQuanLyVatTuXayDung22.DAL\\HeThongQuanLyVatTuXayDung22.DAL.csproj": {
+    "C:\\Users\\Phuong Thao\\Desktop\\HeThongQuanLyVatTuXayDung22\\HeThongQuanLyVatTuXayDung22.DAL\\HeThongQuanLyVatTuXayDung22.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\Desktop\\đồ án\\HeThongQuanLyVatLieuXayDung22\\HeThongQuanLyVatTuXayDung22.DAL\\HeThongQuanLyVatTuXayDung22.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Phuong Thao\\Desktop\\HeThongQuanLyVatTuXayDung22\\HeThongQuanLyVatTuXayDung22.DAL\\HeThongQuanLyVatTuXayDung22.DAL.csproj",
         "projectName": "HeThongQuanLyVatTuXayDung22.DAL",
-        "projectPath": "C:\\Users\\acer\\Desktop\\đồ án\\HeThongQuanLyVatLieuXayDung22\\HeThongQuanLyVatTuXayDung22.DAL\\HeThongQuanLyVatTuXayDung22.DAL.csproj",
-        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\Desktop\\đồ án\\HeThongQuanLyVatLieuXayDung22\\HeThongQuanLyVatTuXayDung22.DAL\\obj\\",
+        "projectPath": "C:\\Users\\Phuong Thao\\Desktop\\HeThongQuanLyVatTuXayDung22\\HeThongQuanLyVatTuXayDung22.DAL\\HeThongQuanLyVatTuXayDung22.DAL.csproj",
+        "packagesPath": "C:\\Users\\Phuong Thao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Phuong Thao\\Desktop\\HeThongQuanLyVatTuXayDung22\\HeThongQuanLyVatTuXayDung22.DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Phuong Thao\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -106,8 +99,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\acer\\Desktop\\đồ án\\HeThongQuanLyVatLieuXayDung22\\HeThongQuanLyVatTuXayDung22.Common\\HeThongQuanLyVatTuXayDung22.Common.csproj": {
-                "projectPath": "C:\\Users\\acer\\Desktop\\đồ án\\HeThongQuanLyVatLieuXayDung22\\HeThongQuanLyVatTuXayDung22.Common\\HeThongQuanLyVatTuXayDung22.Common.csproj"
+              "C:\\Users\\Phuong Thao\\Desktop\\HeThongQuanLyVatTuXayDung22\\HeThongQuanLyVatTuXayDung22.Common\\HeThongQuanLyVatTuXayDung22.Common.csproj": {
+                "projectPath": "C:\\Users\\Phuong Thao\\Desktop\\HeThongQuanLyVatTuXayDung22\\HeThongQuanLyVatTuXayDung22.Common\\HeThongQuanLyVatTuXayDung22.Common.csproj"
               }
             }
           }
@@ -143,7 +136,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -152,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.409\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
