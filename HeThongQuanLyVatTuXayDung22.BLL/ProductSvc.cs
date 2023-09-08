@@ -79,7 +79,7 @@ namespace HeThongQuanLyVatTuXayDung22.BLL
             return res;
         }
 
-        public SingleRsp EditProduct(ProductReq productReq)
+        public SingleRsp UpdateProduct(ProductReq productReq)
         {
             var res = new SingleRsp();
             Product product = new Product();
@@ -87,7 +87,7 @@ namespace HeThongQuanLyVatTuXayDung22.BLL
             product.ProductName = productReq.ProductName;
             product.UnitPrice = productReq.UnitPrice;
             product.UnitsInStock = productReq.UnitsInStock;
-            res = productRep.EditProduct(product);
+            res = productRep.UpdateProduct(product);
             return res;
         }
         public SingleRsp DeleteProduct(int id)

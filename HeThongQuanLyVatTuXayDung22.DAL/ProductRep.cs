@@ -56,7 +56,7 @@ namespace HeThongQuanLyVatTuXayDung22.DAL
            
             return All.Where(a => a.ProductName.Contains(keyWord)).ToList();
         }
-        public SingleRsp EditProduct(Product product)
+        public SingleRsp UpdateProduct(Product product)
         {
             var res = new SingleRsp();
             //res.Data = All.FirstOrDefault(s => s.CategoryId == category.CategoryId);

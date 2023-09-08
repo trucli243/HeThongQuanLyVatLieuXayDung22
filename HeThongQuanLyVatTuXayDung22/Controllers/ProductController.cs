@@ -20,6 +20,20 @@ namespace HeThongQuanLyVatTuXayDung22.Controllers
             productSvc = new ProductSvc();
 
         }
+        [HttpPost("get-all")]
+        public IActionResult getAllProduct()
+        {
+            var res = new SingleRsp();
+            res.Data = productSvc.All;
+            return Ok(res);
+        }
+        [HttpPost("get-by-id")]
+        public IActionResult getProductById([FromBody] SimpleReq req)
+        {
+            var res = new SingleRsp();
+            res = productSvc.Read(req.Id);
+            return Ok(res);
+        }
 
         [HttpPost("create-product")]
         public IActionResult CreateProduct([FromBody] ProductReq productReq)
@@ -37,11 +51,11 @@ namespace HeThongQuanLyVatTuXayDung22.Controllers
             return Ok(res);
         }
 
-        [HttpPost("edit-product")]
+        [HttpPost("update-product")]
         public IActionResult EditProduct([FromBody] ProductReq productReq)
         {
             var res = new SingleRsp();
-            res = productSvc.EditProduct(productReq);
+            res = productSvc.UpdateProduct(productReq);
             return Ok(res);
         }
         [HttpPost("delete-product")]
