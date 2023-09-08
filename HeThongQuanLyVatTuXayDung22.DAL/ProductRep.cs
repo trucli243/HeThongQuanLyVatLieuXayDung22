@@ -5,6 +5,7 @@ using System.Text;
 using HeThongQuanLyVatTuXayDung22.Common.DAL;
 using HeThongQuanLyVatTuXayDung22.Common.Rsp;
 using HeThongQuanLyVatTuXayDung22.DAL.Models;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace HeThongQuanLyVatTuXayDung22.DAL
@@ -55,6 +56,11 @@ namespace HeThongQuanLyVatTuXayDung22.DAL
         {
            
             return All.Where(a => a.ProductName.Contains(keyWord)).ToList();
+        }
+        public List<Product> GetProductsBySupplier(int supplierId)
+        {
+            var context = new QLVLXDContext();
+            return context.Products.Where(p => p.SupplierId == supplierId).ToList();
         }
         #endregion
     }

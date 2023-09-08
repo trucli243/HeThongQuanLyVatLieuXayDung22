@@ -15,14 +15,14 @@ namespace HeThongQuanLyVatTuXayDung22.Controllers
         { 
             categorySvc = new CategorySvc();
         }
-        [HttpPost("get-all")]
+        [HttpGet("get-all")]
         public IActionResult getAllCategories()
         {
             var res = new SingleRsp();
             res.Data = categorySvc.All;
             return Ok(res);
         }
-        [HttpPost("get-by-id")]
+        [HttpGet("get-by-id")]
         public IActionResult getCategoryById([FromBody] SimpleReq req)
         {
             var res = new SingleRsp();
@@ -44,19 +44,19 @@ namespace HeThongQuanLyVatTuXayDung22.Controllers
             res = categorySvc.SearchCategory(searchCategoryReq);
             return Ok(res);
         }
-        [HttpPost("edit-category")]
-        public IActionResult EditCategory([FromBody] CategoryReq categoryReq)
+        [HttpPut("update-category")]
+        public IActionResult UpdateCategory([FromBody] CategoryReq categoryReq)
         {
             var res = new SingleRsp();
-            res = categorySvc.EditCategory(categoryReq);
+            res = categorySvc.UpdateCategory(categoryReq);
             return Ok(res);
         }
-        [HttpPost("delete-category")]
-        public IActionResult DeleteCategory([FromBody] int id)
-        {
-            var res = new SingleRsp();
-            res = categorySvc.DeleteCategory(id);
-            return Ok(res);
-        }
+        //[HttpPost("delete-category")]
+        //public IActionResult DeleteCategory([FromBody] int id)
+        //{
+        //    var res = new SingleRsp();
+        //    res = categorySvc.DeleteCategory(id);
+        //    return Ok(res);
+        //}
     }
 }

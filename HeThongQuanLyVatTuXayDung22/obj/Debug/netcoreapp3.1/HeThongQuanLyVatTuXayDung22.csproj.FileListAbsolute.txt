@@ -151,3 +151,4 @@ C:\Users\acer\Desktop\đồ án\HeThongQuanLyVatLieuXayDung22\HeThongQuanLyVat
 C:\Users\acer\Desktop\đồ án\HeThongQuanLyVatLieuXayDung22\HeThongQuanLyVatTuXayDung22\obj\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.genruntimeconfig.cache
 C:\Users\acer\Desktop\đồ án\HeThongQuanLyVatLieuXayDung22\HeThongQuanLyVatTuXayDung22\obj\Debug\netcoreapp3.1\staticwebassets\HeThongQuanLyVatTuXayDung22.StaticWebAssets.xml
 C:\Users\acer\Desktop\đồ án\HeThongQuanLyVatLieuXayDung22\HeThongQuanLyVatTuXayDung22\obj\Debug\netcoreapp3.1\scopedcss\bundle\HeThongQuanLyVatTuXayDung22.styles.css
+C:\Users\Phuong Thao\Desktop\HeThongQuanLyVatTuXayDung22\HeThongQuanLyVatTuXayDung22\bin\Debug\netcoreapp3.1\HeThongQuanLyVatTuXayDung22.StaticWebAssets.xml

@@ -37,20 +37,13 @@ namespace HeThongQuanLyVatTuXayDung22.Controllers
             return Ok(res);
         }
 
-        //[HttpPost("edit-product")]
-        //public IActionResult EditProduct([FromBody] ProductReq productReq)
-        //{
-        //    var res = new SingleRsp();
-        //    res = productSvc.EditProduct(productReq);
-        //    return Ok(res);
-        //}
-        //[HttpPost("delete-product")]
-        //public IActionResult DeleteProduct([FromBody] int id)
-        //{
-        //    var res = new SingleRsp();
-        //    res = productSvc.DeleteProduct(id);
-        //    return Ok(res);
-        //}
+        [HttpPost("GetProductsBySupplier")]
+        public IActionResult GetProductsBySupplier([FromBody] int supplierId)
+        {
+            var res = productSvc.GetProductsBySupplier(supplierId);
+            return Ok(res);
+        }
+
     }
 
 

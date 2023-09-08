@@ -79,22 +79,27 @@ namespace HeThongQuanLyVatTuXayDung22.BLL
             return res;
         }
 
-        public SingleRsp EditProduct(ProductReq productReq)
+        //public SingleRsp EditProduct(ProductReq productReq)
+        //{
+        //    var res = new SingleRsp();
+        //    Product product = new Product();
+        //    product.ProductId = productReq.ProductId;
+        //    product.ProductName = productReq.ProductName;
+        //    product.UnitPrice = productReq.UnitPrice;
+        //    product.UnitsInStock = productReq.UnitsInStock;
+        //    res = productRep.EditProduct(product);
+        //    return res;
+        //}
+        //public SingleRsp DeleteProduct(int id)
+        //{
+        //    var res = new SingleRsp();
+        //    res = productRep.DeleteProduct(id);
+        //    return res;
+        //}
+
+        public List<Product> GetProductsBySupplier(int supplierId)
         {
-            var res = new SingleRsp();
-            Product product = new Product();
-            product.ProductId = productReq.ProductId;
-            product.ProductName = productReq.ProductName;
-            product.UnitPrice = productReq.UnitPrice;
-            product.UnitsInStock = productReq.UnitsInStock;
-            res = productRep.EditProduct(product);
-            return res;
-        }
-        public SingleRsp DeleteProduct(int id)
-        {
-            var res = new SingleRsp();
-            res = productRep.DeleteProduct(id);
-            return res;
+            return productRep.GetProductsBySupplier(supplierId);
         }
         #endregion
     }
