@@ -59,9 +59,72 @@ namespace HeThongQuanLyVatTuXayDung22.BLL
             return orderRep.SearchOrderByYear(year);
         }
 
-        public List<Order> GetOrdersByYear(int year)
+        //public List<Order> GetOrdersByYear(int year)
+        //{
+        //    return orderRep.GetOrdersByYear(year);
+        //}
+
+        public SingleRsp GetOrdersByYear(int year)
         {
-            return orderRep.GetOrdersByYear(year);
+            var res = new SingleRsp();
+            //lấy danh sách theo từ khóa
+            var orders = orderRep.GetOrdersByYear(year);
+            decimal totalRevenue = orders
+                .SelectMany(o => o.OrderDetails)
+                .Sum(d => d.Quantity * d.UnitPrice);
+            var oj = new
+            {
+                Year = year,
+                TotalRevenue = totalRevenue
+            };
+            res.Data = oj;
+
+            return res;
+        }
+        public SingleRsp GetOrdersByMonth(int month,int year)
+        {
+            var res = new SingleRsp();
+            //lấy danh sách theo từ khóa
+            var orders = orderRep.GetOrdersByMonth(month,year);
+            decimal totalRevenue = orders
+                .SelectMany(o => o.OrderDetails)
+                .Sum(d => d.Quantity * d.UnitPrice);
+            var oj = new
+            {
+                Month = month,
+                Year = year,
+                TotalRevenue = totalRevenue
+            };
+            res.Data = oj;
+
+            return res;
+        }
+        public List<Order> SearchOrderByCusID(string cusID)
+        {
+            return orderRep.SearchOrderByCusID(cusID);
+        }
+        public SingleRsp TotalOrderByCusID(string cusID)
+        {
+            var res = new SingleRsp();
+            var orderCount = orderRep.TotalOrderByCusID(cusID);
+            var orders = orderRep.GetOrdersByCusID(cusID);
+
+            decimal total = orders
+                .SelectMany(o => o.OrderDetails)
+                .Sum(d => d.Quantity * d.UnitPrice);
+
+            var oj = new
+            {
+                CustomerID = cusID,
+                TotalOrderCount = orderCount,
+                TotalRevenue = total
+            };
+            res.Data = oj;
+            return res;
+        }
+        public List<OrderDetail> SearchOrderByOrderID(int orderID)
+        {
+            return orderRep.SearchOrderByOrderID(orderID);
         }
         #endregion
     }

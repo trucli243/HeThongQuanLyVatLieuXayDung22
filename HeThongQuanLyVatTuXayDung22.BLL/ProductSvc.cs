@@ -49,8 +49,10 @@ namespace HeThongQuanLyVatTuXayDung22.BLL
         {
             var res = new SingleRsp();
             Product product = new Product();
-            product.ProductId = productReq.ProductId;
+            product.SupplierId = productReq.SupplierId;
+            product.CategoryId = productReq.CategoryId;
             product.ProductName = productReq.ProductName;
+            product.QuantityPerUnit = productReq.QuantityPerUnit;
             product.UnitPrice = productReq.UnitPrice;
             product.UnitsInStock = productReq.UnitsInStock;
             res = productRep.CreateProduct(product);
@@ -79,24 +81,26 @@ namespace HeThongQuanLyVatTuXayDung22.BLL
             return res;
         }
 
-<<<<<<< HEAD
-        public SingleRsp UpdateProduct(ProductReq productReq)
+        public SingleRsp UpdateProduct(Product product)
         {
             var res = new SingleRsp();
-            Product product = new Product();
-            product.ProductId = productReq.ProductId;
-            product.ProductName = productReq.ProductName;
-            product.UnitPrice = productReq.UnitPrice;
-            product.UnitsInStock = productReq.UnitsInStock;
-            res = productRep.UpdateProduct(product);
+            Product products = new Product();
+            products.SupplierId = product.SupplierId;
+            products.CategoryId = product.CategoryId;
+            products.ProductName = product.ProductName;
+            products.QuantityPerUnit = product.QuantityPerUnit;
+            products.UnitPrice = product.UnitPrice;
+            products.UnitsInStock = product.UnitsInStock;
+            res = productRep.UpdateProduct(products);
             return res;
+            //return productRep.UpdateProduct(productReq);
         }
         public SingleRsp DeleteProduct(int id)
         {
             var res = new SingleRsp();
             res = productRep.DeleteProduct(id);
             return res;
-=======
+        }
         //public SingleRsp EditProduct(ProductReq productReq)
         //{
         //    var res = new SingleRsp();
@@ -118,7 +122,10 @@ namespace HeThongQuanLyVatTuXayDung22.BLL
         public List<Product> GetProductsBySupplier(int supplierId)
         {
             return productRep.GetProductsBySupplier(supplierId);
->>>>>>> 5be62f9c85ac38366af5a2d8a2d002a51518b561
+        }
+        public List<Product> GetProductsByCategory(int categoryID)
+        {
+            return productRep.GetProductsByCategory(categoryID);
         }
         #endregion
     }

@@ -57,11 +57,10 @@ namespace HeThongQuanLyVatTuXayDung22.DAL
            
             return All.Where(a => a.ProductName.Contains(keyWord)).ToList();
         }
-<<<<<<< HEAD
+
         public SingleRsp UpdateProduct(Product product)
         {
             var res = new SingleRsp();
-            //res.Data = All.FirstOrDefault(s => s.CategoryId == category.CategoryId);
             using (var context = new QLVLXDContext())
             {
                 using (var tran = context.Database.BeginTransaction())
@@ -103,12 +102,18 @@ namespace HeThongQuanLyVatTuXayDung22.DAL
                 }
             }
             return res;
-=======
+        }
         public List<Product> GetProductsBySupplier(int supplierId)
         {
             var context = new QLVLXDContext();
             return context.Products.Where(p => p.SupplierId == supplierId).ToList();
->>>>>>> 5be62f9c85ac38366af5a2d8a2d002a51518b561
+
+        }
+        public List<Product> GetProductsByCategory(int categoryID)
+        {
+            var context = new QLVLXDContext();
+            return context.Products.Where(p => p.CategoryId == categoryID).ToList();
+
         }
         #endregion
     }
