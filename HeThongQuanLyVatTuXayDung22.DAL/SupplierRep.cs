@@ -58,7 +58,7 @@ namespace HeThongQuanLyVatTuXayDung22.DAL
 
         //}
 
-        public SingleRsp EditSupplier(Supplier supplier)
+        public SingleRsp UpdateSupplier(Supplier supplier)
         {
             var res = new SingleRsp();
             using (var context = new QLVLXDContext())

@@ -57,7 +57,7 @@ namespace HeThongQuanLyVatTuXayDung22.DAL
             return All.Where(k=>k.CategoryName.Contains(KeyWord)).ToList();
              
         }
-        public SingleRsp EditCategory(Category category)
+        public SingleRsp UpdateCategory(Category category)
         {
             var res = new SingleRsp();
             //res.Data = All.FirstOrDefault(s => s.CategoryId == category.CategoryId);
@@ -80,29 +80,29 @@ namespace HeThongQuanLyVatTuXayDung22.DAL
             }
             return res;
         }
-        public SingleRsp DeleteCategory(int id)
-        {
-            var res = new SingleRsp();
-            //res.Data = All.FirstOrDefault(s => s.CategoryId == category.CategoryId);
-            using (var context = new QLVLXDContext())
-            {
-                using (var tran = context.Database.BeginTransaction())
-                {
-                    try
-                    {
-                        var p = context.Categories.Remove(All.FirstOrDefault(s => s.CategoryId ==id));
-                        context.SaveChanges();
-                        tran.Commit();
-                    }
-                    catch (Exception ex)
-                    {
-                        tran.Rollback();
-                        res.SetError(ex.StackTrace);
-                    }
-                }
-            }
-            return res;
-        }
+        //public SingleRsp DeleteCategory(int id)
+        //{
+        //    var res = new SingleRsp();
+        //    //res.Data = All.FirstOrDefault(s => s.CategoryId == category.CategoryId);
+        //    using (var context = new QLVLXDContext())
+        //    {
+        //        using (var tran = context.Database.BeginTransaction())
+        //        {
+        //            try
+        //            {
+        //                var p = context.Categories.Remove(All.FirstOrDefault(s => s.CategoryId ==id));
+        //                context.SaveChanges();
+        //                tran.Commit();
+        //            }
+        //            catch (Exception ex)
+        //            {
+        //                tran.Rollback();
+        //                res.SetError(ex.StackTrace);
+        //            }
+        //        }
+        //    }
+        //    return res;
+        //}
         #endregion
     }
 }

@@ -38,11 +38,11 @@ namespace HeThongQuanLyVatTuXayDung22.Controllers
         }
 
 
-        [HttpPut("edit-Supplier")]
-        public IActionResult EditSupplier([FromBody] SupplierReq supplierReq)
+        [HttpPut("update-Supplier")]
+        public IActionResult UpdateSupplier([FromBody] SupplierReq supplierReq)
         {
             var res = new SingleRsp();
-            res = supplierSvc.EditSupplier(supplierReq);
+            res = supplierSvc.UpdateSupplier(supplierReq);
             return Ok(res);
         }
 

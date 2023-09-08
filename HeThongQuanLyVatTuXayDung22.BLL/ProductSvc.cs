@@ -79,6 +79,7 @@ namespace HeThongQuanLyVatTuXayDung22.BLL
             return res;
         }
 
+<<<<<<< HEAD
         public SingleRsp UpdateProduct(ProductReq productReq)
         {
             var res = new SingleRsp();
@@ -95,6 +96,29 @@ namespace HeThongQuanLyVatTuXayDung22.BLL
             var res = new SingleRsp();
             res = productRep.DeleteProduct(id);
             return res;
+=======
+        //public SingleRsp EditProduct(ProductReq productReq)
+        //{
+        //    var res = new SingleRsp();
+        //    Product product = new Product();
+        //    product.ProductId = productReq.ProductId;
+        //    product.ProductName = productReq.ProductName;
+        //    product.UnitPrice = productReq.UnitPrice;
+        //    product.UnitsInStock = productReq.UnitsInStock;
+        //    res = productRep.EditProduct(product);
+        //    return res;
+        //}
+        //public SingleRsp DeleteProduct(int id)
+        //{
+        //    var res = new SingleRsp();
+        //    res = productRep.DeleteProduct(id);
+        //    return res;
+        //}
+
+        public List<Product> GetProductsBySupplier(int supplierId)
+        {
+            return productRep.GetProductsBySupplier(supplierId);
+>>>>>>> 5be62f9c85ac38366af5a2d8a2d002a51518b561
         }
         #endregion
     }

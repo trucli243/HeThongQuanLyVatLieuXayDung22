@@ -60,7 +60,7 @@ namespace HeThongQuanLyVatTuXayDung22.BLL
             return res;
         }
 
-        public SingleRsp EditSupplier(SupplierReq supplierReq)
+        public SingleRsp UpdateSupplier(SupplierReq supplierReq)
         {
             var res = new SingleRsp();
             Supplier supplier = new Supplier();
@@ -71,7 +71,7 @@ namespace HeThongQuanLyVatTuXayDung22.BLL
             supplier.City = supplierReq.City;
             supplier.Country = supplierReq.Country;
             supplier.Phone = supplierReq.Phone;
-            res = supplierRep.EditSupplier(supplier);
+            res = supplierRep.UpdateSupplier(supplier);
             return res;
         }
         #endregion
