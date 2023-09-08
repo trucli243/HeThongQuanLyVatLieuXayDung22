@@ -22,8 +22,8 @@ namespace HeThongQuanLyVatTuXayDung22.Controllers
             res.Data = categorySvc.All;
             return Ok(res);
         }
-        [HttpGet("get-by-id")]
-        public IActionResult getCategoryById([FromBody] SimpleReq req)
+        [HttpPost("search-by-id")]
+        public IActionResult searchCategoryById([FromBody] SimpleReq req)
         {
             var res = new SingleRsp();
             res = categorySvc.Read(req.Id);

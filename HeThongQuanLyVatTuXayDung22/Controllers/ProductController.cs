@@ -1,6 +1,7 @@
 ﻿using HeThongQuanLyVatTuXayDung22.BLL;
 using HeThongQuanLyVatTuXayDung22.Common.Req;
 using HeThongQuanLyVatTuXayDung22.Common.Rsp;
+using HeThongQuanLyVatTuXayDung22.DAL.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -20,15 +21,15 @@ namespace HeThongQuanLyVatTuXayDung22.Controllers
             productSvc = new ProductSvc();
 
         }
-        [HttpPost("get-all")]
+        [HttpGet("get-all")]
         public IActionResult getAllProduct()
         {
             var res = new SingleRsp();
             res.Data = productSvc.All;
             return Ok(res);
         }
-        [HttpPost("get-by-id")]
-        public IActionResult getProductById([FromBody] SimpleReq req)
+        [HttpPost("search-by-id")]
+        public IActionResult SearchProductById([FromBody] SimpleReq req)
         {
             var res = new SingleRsp();
             res = productSvc.Read(req.Id);
@@ -52,14 +53,14 @@ namespace HeThongQuanLyVatTuXayDung22.Controllers
         }
 
 
-        [HttpPost("update-product")]
-        public IActionResult EditProduct([FromBody] ProductReq productReq)
+        [HttpPut("update-product")]
+        public IActionResult UpdateProduct([FromBody] Product product)
         {
             var res = new SingleRsp();
-            res = productSvc.UpdateProduct(productReq);
+            res = productSvc.UpdateProduct(product);
             return Ok(res);
         }
-        [HttpPost("delete-product")]
+        [HttpDelete("delete-product")]
         public IActionResult DeleteProduct([FromBody] int id)
         {
             var res = new SingleRsp();
@@ -67,13 +68,18 @@ namespace HeThongQuanLyVatTuXayDung22.Controllers
             return Ok(res);
         }
 
-        [HttpPost("GetProductsBySupplier")]
+        [HttpGet("GetProductsBySupplier")]
         public IActionResult GetProductsBySupplier([FromBody] int supplierId)
         {
             var res = productSvc.GetProductsBySupplier(supplierId);
             return Ok(res);
         }
-
+        [HttpGet("GetProductsByCategory")]
+        public IActionResult GetProductsByCategory([FromBody] int categoryID)
+        {
+            var res = productSvc.GetProductsByCategory(categoryID);
+            return Ok(res);
+        }
 
     }
 

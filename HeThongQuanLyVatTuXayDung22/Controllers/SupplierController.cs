@@ -22,8 +22,9 @@ namespace HeThongQuanLyVatTuXayDung22.Controllers
             res.Data = supplierSvc.All;
             return Ok(res);
         }
-        [HttpGet("get-supplier-by-id")]
-        public IActionResult getSupplierById([FromBody] SimpleReq req)
+        
+        [HttpPost("search-by-id")]
+        public IActionResult searchSupplierById([FromBody] SimpleReq req)
         {
             var res = new SingleRsp();
             res = supplierSvc.Read(req.Id);
