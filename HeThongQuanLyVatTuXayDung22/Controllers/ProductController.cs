@@ -51,7 +51,7 @@ namespace HeThongQuanLyVatTuXayDung22.Controllers
             return Ok(res);
         }
 
-<<<<<<< HEAD
+
         [HttpPost("update-product")]
         public IActionResult EditProduct([FromBody] ProductReq productReq)
         {
@@ -66,7 +66,7 @@ namespace HeThongQuanLyVatTuXayDung22.Controllers
             res = productSvc.DeleteProduct(id);
             return Ok(res);
         }
-=======
+
         [HttpPost("GetProductsBySupplier")]
         public IActionResult GetProductsBySupplier([FromBody] int supplierId)
         {
@@ -74,7 +74,7 @@ namespace HeThongQuanLyVatTuXayDung22.Controllers
             return Ok(res);
         }
 
->>>>>>> 5be62f9c85ac38366af5a2d8a2d002a51518b561
+
     }
 
 
